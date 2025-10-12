@@ -25,7 +25,7 @@ if add_documents:
         documents.append(document)
         
 vector_store = Chroma(
-    collection_name="restaurant_reviews",
+    collection_name="bible_csv_db",
     persist_directory=db_location,
     embedding_function=embeddings
 )
