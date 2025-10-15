@@ -5,7 +5,7 @@ import os
 import pandas as pd
 
 # df = pd.read_csv("realistic_restaurant_reviews.csv")
-df = pd.read_csv("~/Documents/REPO/Prive/KISHA/DEVELOP/bible_databases/formats/csv/KJV.csv")
+df = pd.read_csv("./KJV.csv")
 embeddings = OllamaEmbeddings(model="mxbai-embed-large")
 
 db_location = "./chrome_langchain_db"
