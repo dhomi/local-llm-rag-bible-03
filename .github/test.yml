@@ -1,0 +1,26 @@
+name: Two-colleague pipeline
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  two-celleagues:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: hello-do
+        run: |
+          echo "=== hello-do: starting ==="
+          echo "hello-do: doing work..."
+          sleep 0.2
+          echo "=== hello-do: finished ==="
+
+      - name: hello-be
+        run: |
+          echo "=== hello-be: starting ==="
+          echo "hello-be: performing backend work..."
+          sleep 0.2
+          echo "=== hello-be: finished ==="
